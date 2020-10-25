@@ -1,0 +1,12 @@
+.Footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 0.7rem;
+    justify-content: space-around;   
+    align-items: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    text-align: center;
+}   

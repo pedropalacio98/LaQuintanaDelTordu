@@ -1,0 +1,16 @@
+*{
+    font-family: 'Monserrat',sans-serif;
+   
+}
+
+.switch-wrapper {
+    position: relative;
+  }
+   
+  .switch-wrapper > div {
+    position: absolute;
+  }
+
+  .custom-control{
+      padding-left: 0px;
+  }
