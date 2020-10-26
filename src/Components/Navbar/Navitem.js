@@ -36,6 +36,7 @@ function Navitem(props) {
                     </animated.p>
                 </NavLink>
         </div>
+        
     )
 }
 

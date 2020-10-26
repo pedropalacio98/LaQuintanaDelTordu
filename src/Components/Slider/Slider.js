@@ -36,24 +36,6 @@ function CustomSlider() {
             animate="visible"
             exit="exit"
             className="Image-grid">
-            {/* <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ ease: "easeInOut", duration: '.3', delay: 0.3 }}
-                exit={{ opacity: 0 }}
-            >
-                <GalleryItem imgpath={Screenshot_3} />
-            </motion.div>
-
-            <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ ease: "easeIn", duration: '.3', delay: 0.6 }}
-                exit={{ opacity: 0 }}
-            >
-                <GalleryItem imgpath={Screenshot_4} />
-            </motion.div> */}
-
             <AutoplaySlider
                 cssModule={AwesomeSlider}
                 play={true}

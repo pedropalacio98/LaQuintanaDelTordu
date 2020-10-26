@@ -1,0 +1,14 @@
+.customform{
+  padding: 30px;
+  border-radius: 3%;
+  box-shadow: 10px 10px 40px grey;
+}
+
+@media only screen and (max-width: 600px) {
+    .customform{
+        padding: 0px;
+        box-shadow: 0px 0px 0px white;
+      }
+
+  }
+

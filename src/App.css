@@ -1,7 +1,32 @@
 *{
     font-family: 'Monserrat',sans-serif;
-   
 }
+
+
+.page-container{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-wrap{
+  flex: 1;
+}
+
+
+
+#page-wrap {
+  overflow: auto;
+  top: 45%;
+  position: relative;
+}
+
+
+.molde{
+  display: flex;
+  padding: 40px;
+}
+
 
 .switch-wrapper {
     position: relative;
@@ -13,4 +38,15 @@
 
   .custom-control{
       padding-left: 0px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .customform{
+        padding: 0px;
+        box-shadow: 0px 0px 0px white;
+      }
+      .molde{
+        padding: 0px;
+        padding-top: 40px;
+      }
   }

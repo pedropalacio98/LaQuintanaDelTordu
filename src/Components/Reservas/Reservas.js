@@ -1,31 +1,52 @@
 import React from 'react';
-import {motion} from 'framer-motion'
-
-function Reservas(){
+import { motion } from 'framer-motion'
+import { Container, Form, Card, Button } from 'react-bootstrap'
+import './Reservas.css'
+function Reservas() {
 
     const containerVariances = {
         hidden: {
             opacity: 0
-        }, 
+        },
         visible: {
             opacity: 1,
-            transition: {duration: 0.7}
+            transition: { duration: 0.7 }
         },
         exit: {
-            x:'-100vw',
-            transition: {ease: 'easeInOut'}
+            x: '-100vw',
+            transition: { ease: 'easeInOut' }
         }
     }
 
-    return(
+    return (
         <motion.div
             variants={containerVariances}
             initial="hidden"
             animate="visible"
             exit="exit"
-            className="Image-grid">
-            <h1> Reservas </h1>
-            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+            className="molde"
+        >
+            <Container className="Container">
+                <h1> Reservas </h1>
+                <br></br>
+                <h4>Si Desea Efectuar una reserva por favor rellene este formulario:</h4> 
+                <br>
+                </br>
+                    <Form className="customform">
+                        <Form.Group controlId="formBasicEmail">
+                            <Form.Label>Dirección de Correo</Form.Label>
+                            <Form.Control type="email" placeholder="Introduzca su Email" required />
+                            <Form.Text className="text-muted">
+                                Su correo nunca será utilizado para otros fines que no sean comerciales</Form.Text>
+                        </Form.Group>
+
+                        <Form.Group controlId="exampleForm.ControlTextarea1">
+                            <Form.Label>Contenido</Form.Label>
+                            <Form.Control as="textarea" rows={11} />
+                        </Form.Group>
+                        <Button variant="primary" type="submit"> Submit</Button>
+                    </Form>
+            </Container>
         </motion.div>
     )
 }
