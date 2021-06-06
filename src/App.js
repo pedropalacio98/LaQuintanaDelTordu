@@ -9,6 +9,8 @@ import Contacto from './Components/Contacto/Contacto';
 import Historia from './Components/Historia/Historia';
 import './App.css'
 import Sidebar from './Components/Sidebar/Sidebar';
+import WhatsAppWidget from 'react-whatsapp-widget'
+import 'react-whatsapp-widget/dist/index.css'
 
 function App() {
   const location = useLocation();
@@ -32,6 +34,8 @@ function App() {
           <Footer />
         </div>
       </div >
+      <WhatsAppWidget phoneNumber='34646658443' />
+
     </>
   )
 }

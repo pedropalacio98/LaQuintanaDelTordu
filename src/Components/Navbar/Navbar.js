@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import './Navbar.css'
 import Navitem from './Navitem'
 import gsap from 'gsap'
+import logo from '../../Data/LQDT_Logo.png'
 
 function Navbar() {
     useEffect(() => {
@@ -9,10 +10,11 @@ function Navbar() {
     }, []);
     return (
         <nav className="NavbarItems">
-            <h1 className="navbar-logo">Alfonso Palacio Estrada <br /><i className="fab fa-react" /></h1>
-            <div className=" menu-icon"></div>
-
             <ul className="nav-menu">
+                <li>
+                    <img className='navbar-logo' src={logo} href="/"/>
+                </li>
+
                 <li>
                     <Navitem item="/" text="La Casa" />
                 </li>
@@ -26,7 +28,7 @@ function Navbar() {
                 </li>
 
                 <li>
-                    <Navitem item="Contacto" text="Contacto"/>
+                    <Navitem item="Contacto" text="Contacto" />
                 </li>
             </ul>
         </nav>

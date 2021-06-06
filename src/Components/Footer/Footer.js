@@ -25,7 +25,7 @@ function Footer() {
             className="main-footer">
             <div className="container fluid">
                 <div className="row ulala">
-                    <div className="col-md-3 col-sm-6 ">
+                    <div className="col-md-6 col-sm-12 ">
                         <h4>
                             lorem ipsum
                     </h4>
@@ -36,7 +36,7 @@ function Footer() {
                             <li>4</li>
                         </ul>
                     </div>
-                    <div className="col-md-3 col-sm-6">
+                    <div className="col-md-6 col-sm-12">
                         <h4>
                             lorem ipsum
                     </h4>
@@ -45,29 +45,6 @@ function Footer() {
                             <li>6</li>
                             <li>7</li>
                             <li>8</li>
-                        </ul>
-                    </div>
-                    <div className="col-md-3 col-sm-6">
-                        <h4>
-                            lorem ipsum
-                    </h4>
-                        <ul className="list-unstyled">
-                            <li>9</li>
-                            <li>10</li>
-                            <li>11</li>
-                            <li>12</li>
-                        </ul>
-                    </div>
-
-                    <div className="col-md-3 col-sm-6">
-                        <h4>
-                            lorem ipsum
-                    </h4>
-                        <ul className="list-unstyled">
-                            <li>13</li>
-                            <li>14</li>
-                            <li>15</li>
-                            <li>16</li>
                         </ul>
                     </div>
                 </div>

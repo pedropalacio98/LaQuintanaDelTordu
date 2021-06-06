@@ -16,7 +16,7 @@ function Navitem(props) {
 
     }, [item])
 
-    const [col, set] = useSpring(() => ({ color: "#fff",textTransform: "none" , config: config.wobbly }))
+    const [col, set] = useSpring(() => ({ color: "#000",textTransform: "none" , config: config.wobbly }))
 
     return (
         <div
@@ -28,8 +28,8 @@ function Navitem(props) {
                 >
                     <animated.p 
                     style={col}
-                    onMouseEnter= {()=> set({color:'#000'})}
-                    onMouseLeave= {()=> set({color:'#fff'})}
+                    onMouseEnter= {()=> set({color:'#fff'})}
+                    onMouseLeave= {()=> set({color:'#000'})}
                     className="nav-links"
                     >
                     {props.text}

@@ -5,11 +5,17 @@
     align-items: center;
     flex-wrap: wrap;
     grid-template-columns: repeat(3,auto);
-    margin-top: 5%;
+    margin-top: 1%;
 }
 
 .awssld {
     height: 60vh;
+}
+
+.Welcome{
+    margin-top: 50px;
+    background-color: lightsalmon;
+    text-align: center;
 }
 
 

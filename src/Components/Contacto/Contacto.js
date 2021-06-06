@@ -8,7 +8,7 @@ function Contact(){
         }, 
         visible: {
             opacity: 1,
-            transition: {duration: 0.7}
+            transition: {duration: 1}
         },
         exit: {
             x:'-100vw',

@@ -2,7 +2,9 @@
     font-family: 'Monserrat',sans-serif;
 }
 
-
+.container{
+  margin: 0px;
+}
 .page-container{
   display: flex;
   flex-direction: column;
